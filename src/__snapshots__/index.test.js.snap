@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no remove 1`] = `
+"
+const hello = () => (
+  <div data-test=\\"test-hello\\"></div>
+)
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const hello = () => <div data-test=\\"test-hello\\"></div>;
+"
+`;
+
+exports[`remove some className 1`] = `
+"
+const hello = () => (
+  <div className=\\"test-a hello test-b\\"></div>
+)
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const hello = () => <div className=\\"hello\\"></div>;
+"
+`;
+
+exports[`remove test-hello 1`] = `
+"
+const hello = () => (
+  <div className=\\"test-hello\\"></div>
+)
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const hello = () => <div className=\\"\\"></div>;
+"
+`;
+
+exports[`remove test-other 1`] = `
+"
+const hello = () => (
+  <div className=\\"test-other\\"></div>
+)
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const hello = () => <div className=\\"\\"></div>;
+"
+`;
+
+exports[`with prefix 1`] = `
+"
+const hello = () => (
+  <div className=\\"babel-a hello test-b\\"></div>
+)
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const hello = () => <div className=\\"hello test-b\\"></div>;
+"
+`;
