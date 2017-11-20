@@ -39,6 +39,14 @@ pluginTester({
   )
 `,
     },
+    {
+      title: 'with expresstion',
+      code: `
+  const hello = ({ isActive }) => (
+    <div className={isActive ? "test-hello" : "hello"}>hello</div>
+  )
+`,
+    },
   ],
 })
 

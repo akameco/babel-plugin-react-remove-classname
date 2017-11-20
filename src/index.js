@@ -14,6 +14,10 @@ export default () => {
             if (jsxPath.get('name.name').node === 'className') {
               const valueNode = jsxPath.get('value.value').node
 
+              if (typeof valueNode !== 'string') {
+                return
+              }
+
               const classNames = valueNode
                 .split(' ')
                 .filter(str => !str.startsWith(prefix))

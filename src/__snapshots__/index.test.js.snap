@@ -48,6 +48,18 @@ const hello = () => <div className=\\"\\"></div>;
 "
 `;
 
+exports[`with expresstion 1`] = `
+"
+const hello = ({ isActive }) => (
+  <div className={isActive ? \\"test-hello\\" : \\"hello\\"}>hello</div>
+)
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+const hello = ({ isActive }) => <div className={isActive ? \\"test-hello\\" : \\"hello\\"}>hello</div>;
+"
+`;
+
 exports[`with prefix 1`] = `
 "
 const hello = () => (
