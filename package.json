@@ -19,10 +19,7 @@
     "fmt": "prettier --write '**/*.{ts,tsx,js,json,md}'",
     "lint": "eslint src",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cov": "jest --coverage --ci --runInBand",
-    "test:ci": "npm run validate",
-    "validate": "npm run lint && npm run flow && npm run test"
+    "test:ci": "tsc --noEmit && npm run lint && jest --coverage --ci --runInBand"
   },
   "lint-staged": {
     "*.js": [
