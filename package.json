@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-remove-classname",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "babel plugin for remove classname",
   "license": "MIT",
   "repository": "akameco/babel-plugin-react-remove-classname",
