@@ -1,8 +1,14 @@
-// @flow weak
+import { PluginObj } from '@babel/core'
 import jsxSyntax from '@babel/plugin-syntax-jsx'
 // import blog from 'babel-log'
 
-export default () => {
+interface State {
+  opts: {
+    prefix?: string
+  }
+}
+
+export default (): PluginObj<State> => {
   return {
     inherits: jsxSyntax,
     name: 'react-remove-classname',
@@ -11,7 +17,9 @@ export default () => {
         const prefix = state.opts.prefix || 'test-'
         path.traverse({
           JSXAttribute(jsxPath) {
+            // @ts-ignore
             if (jsxPath.get('name.name').node === 'className') {
+              // @ts-ignore
               const valueNode = jsxPath.get('value.value').node
 
               if (typeof valueNode !== 'string') {
@@ -22,6 +30,7 @@ export default () => {
                 .split(' ')
                 .filter(str => !str.startsWith(prefix))
 
+              // @ts-ignore
               jsxPath.node.value.value = classNames.join(' ')
             }
           },

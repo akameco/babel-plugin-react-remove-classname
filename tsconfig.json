@@ -1,0 +1,9 @@
+{
+  "extends": "@akameco/tsconfig",
+  "compilerOptions": {
+    "lib": ["es2015"],
+    "baseUrl": ".",
+    "paths": { "*": ["types/*"] },
+    "outDir": "lib"
+  }
+}
