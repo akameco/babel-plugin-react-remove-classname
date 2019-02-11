@@ -17,7 +17,7 @@
     "prebuild": "rimraf lib",
     "build": "tsc",
     "fmt": "prettier --write '**/*.{ts,tsx,js,json,md}'",
-    "lint": "eslint src",
+    "lint": "eslint src/**/*.ts",
     "test": "jest",
     "test:ci": "tsc --noEmit && npm run lint && jest --coverage --ci --runInBand"
   },
