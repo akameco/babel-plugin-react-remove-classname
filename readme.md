@@ -53,11 +53,8 @@ Thanks goes to these wonderful people
 ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
 <!-- prettier-ignore -->
-| [<img src="https://avatars2.githubusercontent.com/u/4002137?v=4" width="100px;"/><br /><sub><b>akameco</b></sub>](http://akameco.github.io)<br />[💻](https://github.com/akameco/babel-plugin-react-remove-classname/commits?author=akameco "Code") [📖](https://github.com/akameco/babel-plugin-react-remove-classname/commits?author=akameco "Documentation") [⚠️](https://github.com/akameco/babel-plugin-react-remove-classname/commits?author=akameco "Tests") [🚇](#infra-akameco "Infrastructure (Hosting, Build-Tools, etc)") |
-| :---: |
-
+<table><tr><td align="center"><a href="http://akameco.github.io"><img src="https://avatars2.githubusercontent.com/u/4002137?v=4" width="100px;" alt="akameco"/><br /><sub><b>akameco</b></sub></a><br /><a href="https://github.com/akameco/babel-plugin-react-remove-classname/commits?author=akameco" title="Code">💻</a> <a href="https://github.com/akameco/babel-plugin-react-remove-classname/commits?author=akameco" title="Documentation">📖</a> <a href="https://github.com/akameco/babel-plugin-react-remove-classname/commits?author=akameco" title="Tests">⚠️</a> <a href="#infra-akameco" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td></tr></table>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the
