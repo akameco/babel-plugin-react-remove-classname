@@ -1,5 +1,5 @@
 // @flow weak
-import jsxSyntax from 'babel-plugin-syntax-jsx'
+import jsxSyntax from '@babel/plugin-syntax-jsx'
 // import blog from 'babel-log'
 
 export default () => {

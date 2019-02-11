@@ -1,6 +1,9 @@
 // @flow
 import pluginTester from 'babel-plugin-tester'
+import { getSnapshotSerializer } from 'string-snapshot-serializer'
 import plugin from '.'
+
+expect.addSnapshotSerializer(getSnapshotSerializer())
 
 pluginTester({
   title: 'default',

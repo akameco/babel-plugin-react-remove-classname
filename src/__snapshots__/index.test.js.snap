@@ -1,73 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default no remove: no remove 1`] = `
-"
+
 const hello = () => (
-  <div data-test=\\"test-hello\\"></div>
+  <div data-test="test-hello"></div>
 )
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const hello = () => <div data-test=\\"test-hello\\"></div>;
-"
+const hello = () => <div data-test="test-hello"></div>;
+
 `;
 
 exports[`default remove some className: remove some className 1`] = `
-"
+
 const hello = () => (
-  <div className=\\"test-a hello test-b\\"></div>
+  <div className="test-a hello test-b"></div>
 )
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const hello = () => <div className=\\"hello\\"></div>;
-"
+const hello = () => <div className="hello"></div>;
+
 `;
 
 exports[`default remove test-hello: remove test-hello 1`] = `
-"
+
 const hello = () => (
-  <div className=\\"test-hello\\"></div>
+  <div className="test-hello"></div>
 )
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const hello = () => <div className=\\"\\"></div>;
-"
+const hello = () => <div className=""></div>;
+
 `;
 
 exports[`default remove test-other: remove test-other 1`] = `
-"
+
 const hello = () => (
-  <div className=\\"test-other\\"></div>
+  <div className="test-other"></div>
 )
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const hello = () => <div className=\\"\\"></div>;
-"
+const hello = () => <div className=""></div>;
+
 `;
 
 exports[`default with expresstion: with expresstion 1`] = `
-"
+
 const hello = ({ isActive }) => (
-  <div className={isActive ? \\"test-hello\\" : \\"hello\\"}>hello</div>
+  <div className={isActive ? "test-hello" : "hello"}>hello</div>
 )
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const hello = ({ isActive }) => <div className={isActive ? \\"test-hello\\" : \\"hello\\"}>hello</div>;
-"
+const hello = ({
+  isActive
+}) => <div className={isActive ? "test-hello" : "hello"}>hello</div>;
+
 `;
 
 exports[`with option with prefix: with prefix 1`] = `
-"
+
 const hello = () => (
-  <div className=\\"babel-a hello test-b\\"></div>
+  <div className="babel-a hello test-b"></div>
 )
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const hello = () => <div className=\\"hello test-b\\"></div>;
-"
+const hello = () => <div className="hello test-b"></div>;
+
 `;
